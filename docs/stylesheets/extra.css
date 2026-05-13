@@ -1,0 +1,42 @@
+/* Example: Change body text size
+/* .md-typeset {
+  font-size: 0.8rem; /* Default is roughly 0.8rem or 16px */
+/* } */ 
+
+/* Example: Change header size specifically */
+/* .md-typeset h1 {
+  font-size: 2.0em;
+} */ 
+
+/* .md-typeset .admonition {
+    font-size: 12px;
+} */
+
+
+
+
+
+/* Adjust as needed; default is usually 20px (125%) */
+/* html {
+  font-size: 22px; 
+} */
+
+
+.md-typeset .admonition-title, 
+.md-typeset summary {
+  font-size: 1.25rem;
+}
+
+.md-typeset .admonition > :not(.admonition-title) {
+  font-size: 1.0rem;
+}
+
+
+/* .md-typeset .admonition-title, 
+.md-typeset summary {
+  font-size: 1.25rem;
+} */
+
+.center-text {
+  text-align: center;
+}
