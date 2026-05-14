@@ -1,1 +1,0 @@
-# Guppy CCR
