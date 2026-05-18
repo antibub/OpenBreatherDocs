@@ -29,7 +29,32 @@ markdown_extensions:
   - toc:
       toc_depth: 0
 
+
+plugins:
+    # - search: {}
+    - encryptcontent:
+        global_password: 'test'
+        encrypted_something:
+          md-sidebar--primary: [div, class]   # Encrypts the Left Sidebar (Site Navigation)
+        summary: 'Encrypted content'
+        encryption_info_message: 'Please enter the password to view.'
+
 extra_css:
   - stylesheets/extra.css
+
+nav:  
+  - Warning!: index.md
+  - What is OpenBreather?: what_is_openbreather.md
+  - How to contribute: how_to_contribute.md
+  - Complete designs:
+    - Guppy Pendulum CCR: 
+      - Design brief: guppy_ccr/design_brief.md
+      - Analysis: 
+        - Design for manufacturing: guppy_ccr/analysis/design_for_manufacturing.md
+        - Scrubber bedlife: guppy_ccr/analysis/scrubber_bedlife.md
+        - Work of breathing: guppy_ccr/analysis/work_of_breathing.md
+      - Assembly: guppy_ccr/assembly.md
+      - Performance: guppy_ccr/performance.md
+
 
 
