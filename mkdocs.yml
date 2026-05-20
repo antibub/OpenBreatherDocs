@@ -28,6 +28,8 @@ markdown_extensions:
   - pymdownx.tilde
   - toc:
       toc_depth: 0
+  - pymdownx.arithmatex:
+      generic: true
 
 
 plugins:
@@ -46,6 +48,7 @@ nav:
   - Warning!: index.md
   - What is OpenBreather?: what_is_openbreather.md
   - How to contribute: how_to_contribute.md
+  - Glossary: glossary.md
   - Complete designs:
     - Guppy Pendulum CCR: 
       - Design brief: guppy_ccr/design_brief.md
@@ -58,3 +61,6 @@ nav:
 
 
 
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
