@@ -53,7 +53,7 @@ Axial scrubber diameter:
 \(D_{canister}=0.31\:ft\)
 {: .center-text}
 
-Axial scrubber length to diameter ratio:
+Axial scrubber aspect or length to diameter ratio:
 
 \(L/D=2\)
 {: .center-text}
@@ -96,12 +96,12 @@ Fraction CO2 concentration in gas stream:
 
 (Would be 1/ata instead of unitless without considering that the numerator is measured assuming STPD conditions)
 
-\(CO2_{fraction}=(VO2*RQ/Q*P_{depth})/28.3168\:L/ft^3=0.022428717\)
+\(V\llap{-}_{frac,CO_2}=(VO2*RQ/Q*P_{depth})/28.3168\:L/ft^3=0.022428717\)
 {: .center-text}
 
 CO2 percentage concentration in gas stream:
 
-\(CO2_{\%}=CO2_{fraction}*100=2.2428717\%\)
+\(CO2_{\%}=V\llap{-}_{frac,CO_2}*100=2.2428717\%\)
 {: .center-text}
 
 
@@ -173,7 +173,7 @@ Ambient pressure during test:
 
 Measured average absorbent capacity:
 
-\(Absorbent_{cap}=107L(CO2)/kg(Sofnolime)\)
+\(Absorbent_{capacity}=107L(CO2)/kg(Sofnolime)\)
 {: .center-text}
 
 Mass of absorbent used:
@@ -196,6 +196,188 @@ Volume of CO2:
 \(V\llap{-}_{CO2}=107L\)
 {: .center-text}
 
-Van der Waals number of moles calculation:
+[Van der Waals](https://www.engineeringtoolbox.com/non-ideal-gas-van-der-Waals-equation-constants-gas-law-d_1969.html) number of moles calculation utilizing the Van der Waals equation of state:
 
-\(   \)
+\[(P + a (n / V)^2) (V / n - b) = R T\]
+
+\[a = 3.658\:bar*L^2 / mole^2\]
+
+\[b = 0.04286\:L/mole\]
+
+Determine coefficients for the Van der Waals cubic polynomial:
+
+\[a_{3}\:x^3+a_{2}\:x^2+a_{1}\:x+a_{0}\]
+
+
+\[a_{3} = a*(b/(V\llap{-}_{CO2})^2)=0.00001369393659\]
+
+\[a_{2} = - a/V\llap{-}_{CO2}=-0.03418691589\]
+
+\[a_{1}=P_{test}*b+R*T_{test}=23.17211315\]
+
+\[a_{0}=-P_{test}*V\llap{-}_{CO2}=-321\]
+
+[Solving](https://www.calculatorsoup.com/calculators/algebra/cubicequation.php) this cubic polynomial, the non-imagery solution is:
+
+\[n=14.14643\:moles\]
+
+Total mass of CO2:
+
+\[M_{total\:CO2}=n*M_{CO2}=622.5702379\:g=0.6225702379\:kg\]
+
+Absorbent capacity in terms of mass/mass:
+
+\[Absorbent_{capacity\:mass}=0.6225702379\:kg(CO2)/kg(Absorbent)\]
+
+
+## Theoretical bed life
+
+\[T_{theoretical}=(Absorbent_{capacity\:mass}*W_{absorbent})/(Q*CO2_{fraction}*\varphi_{CO2})=230.72156796723\:min\]
+
+## Superficial velocity through scrubber canister
+
+\[v_{superficial}=Q/(\pi*(D_{canister}/2)^2)*(1/60)s/min\]
+
+## Mean absorbent particle diameter
+
+\[e=0.005577427822\:ft\]
+
+## Density of O2 at operating pressure
+
+
+O2 molecular weight:
+
+\[M_{O2}=31.999\:lbm/lbm\text{-}mole\]
+
+Density of CO2 at operating pressure:
+
+\[\varphi_{O2}=(M_{O2}*P_{abs}/R*T_{R})*144\:in^2/ft^2=0.1307511953\:lbm/ft^3\]
+
+## Fractional O2 concentration in gas stream
+
+Assuming pure oxygen addition to gas stream:
+
+\[V\llap{-}_{frac,O_2}=1-V\llap{-}_{frac,CO_2}=0.977571283\]
+
+## Density of gas stream 
+
+\[\varphi_{gas}=\varphi_{O2}*V\llap{-}_{frac,O_2}+\varphi_{CO2}*V\llap{-}_{frac,CO_2}=0.1318519559\:lbm/ft^3\]
+
+## Viscosity of constituent carbon dioxide gas
+
+Formula found in appendix C:
+
+\[\mu_{CO2}=147.48 * ((459.67 + T)/529.67)^{0.999}=147.48\:\mu P\]
+
+
+## Viscosity of constituent oxygen gas
+
+Formula found in appendix C:
+
+\[\mu_{O2}=202.99 * ((459.67 + T)/529.67)^{0.784}=202.99\:\mu P\]
+
+## Viscosity of gas stream
+
+Formula is Wilke's semi-empirical method found in appendix C:
+
+
+\[\mu_{\text{mix}} = \sum_{i=1}^{n} \frac{x_i \mu_i}{\sum_{j=1}^{n} x_j \Phi_{ij}}\]
+
+
+\[\Phi_{ij} = \frac{\left[1 + \left(\frac{\mu_i}{\mu_j}\right)^{1/2} \left(\frac{M_j}{M_i}\right)^{1/4}\right]^2}{\sqrt{8}\left(1 + \frac{M_i}{M_j}\right)^{1/2}}\]
+
+Calculation of interaction parameters:
+
+\[\Phi_{O2,\:O2}= \frac{\left[1 + \left(\frac{\mu_{O2}}{\mu_{O2}}\right)^{1/2} \left(\frac{M_{O2}}{M_{O2}}\right)^{1/4}\right]^2}{\sqrt{8}\left(1 + \frac{M_{O2}}{M_{O2}}\right)^{1/2}}=1\]
+
+\[\Phi_{O2,\:CO2}=\frac{\left[1 + \left(\frac{\mu_{O2}}{\mu_{CO2}}\right)^{1/2} \left(\frac{M_{O2}}{M_{CO2}}\right)^{1/4}\right]^2}{\sqrt{8}\left(1 + \frac{M_{O2}}{M_{CO2}}\right)^{1/2}}=1.386886759\]
+
+\[\Phi_{CO2,\:O2}=\frac{\left[1 + \left(\frac{\mu_{CO2}}{\mu_{O2}}\right)^{1/2} \left(\frac{M_{CO2}}{M_{O2}}\right)^{1/4}\right]^2}{\sqrt{8}\left(1 + \frac{M_{CO2}}{M_{O2}}\right)^{1/2}}=0.7326297077\]
+
+\[\Phi_{CO2,\:CO2}=\frac{\left[1 + \left(\frac{\mu_{CO2}}{\mu_{CO2}}\right)^{1/2} \left(\frac{M_{CO2}}{M_{CO2}}\right)^{1/4}\right]^2}{\sqrt{8}\left(1 + \frac{M_{CO2}}{M_{CO2}}\right)^{1/2}}=1\]
+
+Viscosity of gas stream:
+
+\[\mu_{\text{mix,1}} = \frac{V\llap{-}_{frac,O_2} * \mu_{O_2}}{V\llap{-}_{frac,O_2} * \Phi_{11} + V\llap{-}_{frac,CO_2} * \Phi_{12}}=143.9818919 \: \mu P\]
+
+\[\mu_{\text{mix,2}} = \frac{V\llap{-}_{frac,CO_2} * \mu_{CO_2}}{V\llap{-}_{frac,O_2} * \Phi_{21} + V\llap{-}_{frac,CO_2} * \Phi_{22}}=4.478294877 \: \mu P\]
+
+\[\mu_{\text{mix}} = \mu_{\text{mix,1}} + \mu_{\text{mix,2}} = 148.4601868 \: \mu P\]
+
+
+\[\mu_{\text{mix}} = \mu_{\text{mix}} / 10^6*0.1\:Pa\text{-}s/P*0.67197\:lbm/ft\text{-}s/Pa\text{-}s=0.00000997607917\:lbm/ft\text{-}s\]
+
+## Particle Reynolds number
+
+\[Re = \frac{\varphi_{gas}*v_{superficial}*e}{\mu_{\text{mix}}}=28.63243486\]
+
+## Product Reynolds number and canister aspect ratio
+
+This number is needed for graph reading:
+
+\[Re*L/D=57.26486972\]
+
+## Reading the canister efficiency graph 
+
+![Figure 4](../../assets/scrubber_design_manual_graphs/figure_4.png){ align=center }
+
+Canister efficiency as read from Figure 4 is approximately: 
+{: .center-text}
+
+\[\eta_{graph}=0.175\]
+
+
+## Reading the temperature effect factor graph 
+
+![Figure 11](../../assets/scrubber_design_manual_graphs/figure_11.png){ align=center }
+
+The temperature effect factor as read from Figure 11 is approximately: 
+{: .center-text}
+
+\[A_{T}=1\]
+
+
+## Reading the humidity effect factor graph 
+
+![Figure 12](../../assets/scrubber_design_manual_graphs/figure_12.png){ align=center }
+
+The humidity effect factor as read from Figure 12 is approximately: 
+{: .center-text}
+
+\[A_{H}=1\]
+
+
+## Reading the CO2 injection rate factor graph 
+
+![Figure 13](../../assets/scrubber_design_manual_graphs/figure_13.png){ align=center }
+
+The CO2 injection rate factor as read from Figure 13 is approximately: 
+{: .center-text}
+
+\[A_{C}=0.675\]
+
+## Reading the length-to-diameter factor graph 
+
+![Figure 14](../../assets/scrubber_design_manual_graphs/figure_14.png){ align=center }
+
+The length-to-diameter factor as read from Figure 14 is approximately: 
+{: .center-text}
+
+\[A_{D}=0.65\]
+
+## Reading the wall effect factor graph 
+
+![Figure 15](../../assets/scrubber_design_manual_graphs/figure_15.png){ align=center }
+
+The wall effect factor as read from Figure 15 is approximately: 
+{: .center-text}
+
+\[A_{W}=2\]
+
+## Actual canister efficiency
+
+\[\eta_{actual}=\eta_{graph}*A_{T}*A_{H}*A_{C}*A_{D}*A_{W}=0.1535625\]
+
+## Predicted canister bed life
+
+\[T_{actual}=T_{theoretical}*\eta_{actual}=35.43018078\:min\]
