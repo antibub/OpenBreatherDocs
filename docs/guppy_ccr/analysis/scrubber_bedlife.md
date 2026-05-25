@@ -89,7 +89,7 @@ Compensated oxygen consumption (See manual for formula):
 
 Volumetric flow rate to canister:
 
-\(   Q=RMV/28.3168\:L/ft^3=1.758985068\: ft^3/min\)
+\(Q=RMV/28.3168\:L/ft^3=1.758985068\: ft^3/min\)
 {: .center-text}
 
 Fraction CO2 concentration in gas stream:
