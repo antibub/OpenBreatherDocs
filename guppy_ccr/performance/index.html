@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="https://sitename.example/guppy_ccr/performance/" rel="canonical"/>
+<link href="../assembly/" rel="prev"/>
+<link href="../../appendix/" rel="next"/>
+<link href="../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.6" name="generator"/>
+<title>[Protected] Performance - OpenBreather</title>
+<link href="../../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,700,700i%7CRed+Hat+Text:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Rubik";--md-code-font:"Red Hat Text"}</style>
+<link href="../../stylesheets/extra.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="blue" data-md-color-primary="yellow" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="OpenBreather" class="md-header__button md-logo" data-md-component="logo" href="../.." title="OpenBreather">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.2 11.2c1.77 0 3.2 1.43 3.2 3.2s-1.43 3.2-3.2 3.2S4 16.17 4 14.4s1.43-3.2 3.2-3.2m7.6 4.8a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m.4-12A4.8 4.8 0 0 1 20 8.8c0 2.65-2.15 4.8-4.8 4.8a4.8 4.8 0 0 1-4.8-4.8c0-2.65 2.15-4.8 4.8-4.8"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            OpenBreather
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              [Protected] Performance
+            
+          </span>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" style="display:none !important">l0Z+jPAL+xMvB2RkpArJ6w==;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</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<div id="mkdocs-encrypted-content" style="display:none">BQF/FxaA9qsPNNrwlZDo2Q==;TlJI9ee+qI6Os1nOUjPmQTxDi6duQR9k+jj9PJA8gIzveD3d2Z3KO7MGF8oClHGz</div>
+<div id="mkdocs-decrypted-content" style="display:none">
+<form class="md-content__inner md-typeset" id="mkdocs-decrypt-form">
+<h1>Encrypted content</h1>
+<p>Please enter the password to view.</p>
+<input class="md-input" id="mkdocs-content-password" placeholder="Password" type="password"/>
+<p id="mkdocs-decrypt-msg"></p>
+</form>
+</div>
+<script type="text/javascript">
+var encryptcontent_id = "encryptcontent_1";
+var encryptcontent_path = "guppy_ccr/performance/";
+var decryption_failure_message = "Invalid password.";
+var encryptcontent_keystore = ["A/nQ+kxZ/zJN8E50DV2znA==;yhs0hblMZ/qglbc02FRAalayQ2l777rDqRRH+oWsgd9vzT1nCuRAAJpBL75m0saUsrZjzeNS2VM0jtW6jBR3jKSL7Of2aiznghcG7kCxx6HgaGL7qO+ufxkJRZvow129;RFbiCuB46dsgLxpNIu5cHg=="];
+var encryptcontent_obfuscate = 0;
+
+const encryptcontent_event = new Event("encryptcontent_event");
+var encryptcontent_done = false;
+</script>
+<script type="module">
+if (!window.hasOwnProperty("init_decryptor")) {
+    import("../../assets/javascripts/decrypt-contents.js");
+} else {
+    init_decryptor();
+}
+</script>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+<script src="../../javascripts/mathjax.js"></script>
+<script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>
