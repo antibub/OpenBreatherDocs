@@ -1,7 +1,7 @@
 # Design Brief
 
 
-## Background
+## Historical Background
 The Guppy pendulum mCCR is a pure oxygen pendulum configuration rebreather heavily inspired by mid-twentieth century Italian rebreather designs such as the Cressi-Sub Aro Ar57b or Pirelli LS 901.  
 
 These basic pendulum style radial scrubber based designs offers several benefits such as:
@@ -17,8 +17,9 @@ They also have several drawbacks:
 
 * Overall pendulum configuration rebreathers almost always have a higher WOB when compared to recirculating designs due to having a much larger dead volume.
     
-* Little to no ability to recover from a loop flooding event.
+* Little to no ability to recover from a loop flooding while underwater.
 
-## What's the point of the Guppy CCR?
- The main point for the Guppy CCR project is to maximize fun! Both fun when building the unit and when diving the unit.
- 
+## What's the point of the Guppy mCCR?
+ The main point for the Guppy mCCR project is to maximize fun! Both fun when building the unit and when diving the unit. 
+
+<!-- ## Required tools  -->

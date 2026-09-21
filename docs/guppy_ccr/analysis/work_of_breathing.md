@@ -53,34 +53,43 @@ Re >= 40
 
 Reynolds number calculation for radial scrubber using superficial velocity:
 
-\begin{align*}
-Re &= \frac{\rho \cdot v \cdot e}{\mu} \\
-&\downarrow \\
-Re &= v \cdot \frac{\rho \cdot e}{\mu} \\
-&\downarrow \\
-Re &= \frac{Q}{2 \cdot \pi \cdot r \cdot L} \cdot \frac{\rho \cdot e}{\mu}
-\end{align*}
+
+\[Re = \frac{\rho \cdot v \cdot e}{\mu}\]
+
+\[\downarrow\]
+
+\[Re = v \cdot \frac{\rho \cdot e}{\mu}\]
+
+\[\downarrow\]
+
+\[Re = \frac{Q}{2 \cdot \pi \cdot r \cdot L} \cdot \frac{\rho \cdot e}{\mu}\]
+
 
 
 
 Pressure drop for a radial scrubber (Nuckols, Deason, technical manual equation used at start):
 
-\begin{align*}
-\Delta\:P &= \frac{4 \cdot L_B \cdot \rho \cdot v^2 \cdot A_f \cdot f}{2 \cdot g \cdot e} \\
-&\downarrow \\
-\Delta\:P &= v^2 \cdot \frac{4 \cdot L_B \cdot \rho \cdot A_f \cdot f}{2 \cdot g \cdot e} \\
-&\downarrow \\
-\Delta\:P &= \left(\frac{Q}{2 \cdot \pi \cdot r \cdot L}\right)^2 \cdot \frac{4 \cdot L_B \cdot \rho \cdot A_f \cdot f}{2 \cdot g \cdot e} \\
-&\downarrow \\
-\Delta\:P &= \left(\frac{Q}{2 \cdot \pi \cdot r \cdot L}\right)^2 \cdot \frac{4 \cdot L_B \cdot \rho \cdot A_f}{2 \cdot g \cdot e} \cdot f
-\end{align*}
+
+\[\Delta\:P = \frac{4 \cdot L_B \cdot \rho \cdot v^2 \cdot A_f \cdot f}{2 \cdot g \cdot e} \]
+
+\[\downarrow\]
+
+\[\Delta\:P = v^2 \cdot \frac{4 \cdot L_B \cdot \rho \cdot A_f \cdot f}{2 \cdot g \cdot e}\]
+
+\[\downarrow\]
+
+\[\Delta\:P = \left(\frac{Q}{2 \cdot \pi \cdot r \cdot L}\right)^2 \cdot \frac{4 \cdot L_B \cdot \rho \cdot A_f \cdot f}{2 \cdot g \cdot e}\]
+
+\[\downarrow\]
+
+\[\Delta\:P = \left(\frac{Q}{2 \cdot \pi \cdot r \cdot L}\right)^2 \cdot \frac{4 \cdot L_B \cdot \rho \cdot A_f}{2 \cdot g \cdot e} \cdot f\]
 
 
 ## \(Re\:\) and \(\Delta\:P\) calculations:
 
 Absorbent bed length per calculation:
 
-Radius
+Radius:
 
 \[\Delta_{radius}=0.002\:ft\] 
 
@@ -118,3 +127,68 @@ Change in pressure summation:
 
 
 ![Figure 16](../../assets/sofnolime_797_wob_graph.png){align=center}
+
+
+From the pressure drop graph we can roughly approximate the Sofnolime 797 line as linear then find the slope:
+
+\[slope\approx\frac{\frac{50\:mm\:H2O}{100\:mm\:bed\:length}}{10\:\frac{m}{min}}\]
+
+\[\downarrow\]
+
+
+\[slope\approx0.05\: \frac{\frac{\:mm\:H2O}{\:mm\:bed\:length}}{\:\frac{m}{min}}\]
+
+\[\downarrow\]
+
+\[slope\approx 3 \: \frac{\frac{\:mm\:H2O}{\:mm\:bed\:length}}{\:\frac{m}{sec}}\]
+
+\[\downarrow\]
+
+\[slope\approx 0.9143999707 \: \frac{\frac{\:mm\:H2O}{\:mm\:bed\:length}}{\:\frac{ft}{sec}}\]
+
+\[\downarrow\]
+
+\[slope\approx 278.7091111 \: \frac{\frac{\:mm\:H2O}{\:ft\:bed\:length}}{\:\frac{ft}{sec}}\]
+
+
+
+
+
+
+
+
+
+
+## \(\Delta\:P\) calculations:
+
+Absorbent bed length per calculation:
+
+Radius:
+
+\[\Delta_{radius}=0.002\:ft\] 
+
+$$ \small
+\begin{array}[!ht]
+    \centering
+    \begin{array}{|l|l|l|}
+    \hline
+        Radius\:(from\:center) (ft) & \Delta V\:(\frac{ft}{s}) & \Delta P\:(mmH2O) \\ \hline
+        0.04166666667 &	0.4568070004 & 0.254632546 \\ \hline
+        0.04366666667 & 0.4358845424 & 0.2429699867\\ \hline
+        . \\ \hline
+        . \\ \hline
+        . \\ \hline
+        0.2656666667 & 0.07164476167 & 0.03993609568 \\ \hline
+    \end{array}
+\end{array} $$
+
+Full table can be found [here](../../appendix.md).
+{: .center-text}
+
+Change in pressure summation:
+
+\[\Delta\:P = 9.975719575\:mm\text{-}H2O = 0.9975719575\:cm\text{-}H2O \]
+
+## Work of breathing from empirical analysis:
+
+\[WOB=\frac{\Delta\:P}{Q}=1.201678918\:\:\frac{cm\text{-}H2O}{\frac{L}{S}}\]
