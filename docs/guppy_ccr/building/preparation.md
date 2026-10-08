@@ -1,4 +1,4 @@
-# Preparing the parts 
+# Preparing the components {: .center-text}
 
 ## Metal part edge filing
 
@@ -34,7 +34,7 @@ This is important as any additional punctures in the dry bag will need to be pat
 
 ![Figure 4](../../assets/part_preparation/counterlung_after_jig_and_cut.png){ align=center }
 
-### Scrubber 
+## Scrubber 
 Upon receiving the scrubber frame from the CNC cutting service there will most likely be a large build up of slag on the interior from laser cutting. Special care needs to be taken to remove all slag buildup from the frame. Also, care should be taken to clean all surfaces mechanically before building the scrubber to remove any unwanted debris.
 
 ![Figure 5](../../assets/part_preparation/scrubber_frame.jpg){ align=center }
@@ -54,3 +54,11 @@ To make the outer scrubber wall mesh to the following:
 ![Figure 7](../../assets/part_preparation/scrubber_outer_wall_mesh_dimen.png){ align=center }
 
 ![Figure 8](../../assets/part_preparation/scrubber_outer_wall_mesh.jpg){ align=center }
+
+
+To make the foam scrubber canister inserts, use the foam insert jig to trace and cut out two identical pieces.
+
+![Figure 9](../../assets/part_preparation/foam_inserts_and_jig.jpg){ align=center }
+
+## Webbing sections
+
