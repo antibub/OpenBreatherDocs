@@ -17,14 +17,14 @@ Upon receiving the stainless steel CNC cut parts make sure to feel the edges and
 To prepare the NRS 15L dry bag for use as the Guppy counterlung do the following: 
 
 
-* Place the hole jig in the center of the counterlung with the bottom edge 1.3125 feet or 15.75 inches from the opening of the bag. Use the center notches in the jig to help with alignment.
+1. Place the hole jig in the center of the counterlung with the bottom edge 1.3125 feet or 15.75 inches from the opening of the bag. Use the center notches in the jig to help with alignment.
 
-* Carefully trace out the required holes.
+2. Carefully trace out the required holes.
 
-* Place a small cutting mat or board inside the dry bag so you can easily make cuts on one side without damaging the other. 
+3. Place a small cutting mat or board inside the dry bag so you can easily make cuts on one side without damaging the other. 
 This is important as any additional punctures in the dry bag will need to be patched.
 
-* Cut out the traced holes with a craft knife, use drill bits for the four outside holes.
+4. Cut out the traced holes with a craft knife, use drill bits for the four outside holes.
 
 #### Before cutting holes: {: .center-text}
 
@@ -43,13 +43,13 @@ The final step in preparing the frame is to tap the eight M4 bolt holes as shown
 
 ![Figure 6](../../assets/part_preparation/scrubber_frame_tapped_holes.jpg){ align=center }
 
-To make the outer scrubber wall mesh to the following:
+To make the outer scrubber wall mesh do the following:
 
-* Cut out appropriate sized strip from the larger mesh sheet. This is easily done with jeweler's scissors.
+1. Cut out appropriate sized strip from the larger mesh sheet. This is easily done with jeweler's scissors.
 
-* Using a small diameter center punch create the first set of two holes that are 0.5 inches from the edge.
+2. Using a small diameter center punch create the first set of two holes that are 0.5 inches from the edge.
 
-* Attach the mesh to the frame with the two existing holes, then wrap the mesh around the frame, using it as a jig, and repeat the hole creation process with the center punch. 
+3. Attach the mesh to the frame with the two existing holes, then wrap the mesh around the frame, using it as a jig, and repeat the hole creation process with the center punch. 
 
 ![Figure 7](../../assets/part_preparation/scrubber_outer_wall_mesh_dimen.png){ align=center }
 
@@ -62,3 +62,20 @@ To make the foam scrubber canister inserts, use the foam insert jig to trace and
 
 ## Webbing sections
 
+Six sections of three different webbing types are required to build the unit: 
+
+* Two sections of 2 inch width webbing, 12 inches in length.
+* One section of 2 inch width webbing, 28 inches in length.
+* One section of 1.5 inch width webbing, 12 inches in length.
+* One section of 1.5 inch width webbing, 42 inches in length.
+* One section of 1 inch width webbing, 26 inches in length.
+
+![Figure 10](../../assets/part_preparation/short_2_in_webbing_section_(x2).jpg){ align=center }
+
+![Figure 11](../../assets/part_preparation/long_2_in_webbing_section.jpg){ align=center }
+
+![Figure 12](../../assets/part_preparation/short_1.5_in_webbing_section.jpg){ align=center }
+
+![Figure 13](../../assets/part_preparation/long_1.5_in_webbing_section.jpg){ align=center }
+
+![Figure 14](../../assets/part_preparation/1_in_webbing_section.jpg){ align=center }

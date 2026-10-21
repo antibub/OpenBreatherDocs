@@ -6,7 +6,7 @@ title: "Warning!"
 ![Image title](assets/reaper_s.png){ align=center }
 {: .center-text}
 
-!!! warning "==Danger: LIFE-CRITICAL EQUIPMENT!== "
+!!! warning "==Danger!== "
 
     <!-- ==DANGER: LIFE-CRITICAL EQUIPMENT== -->
     {: .center-text}
