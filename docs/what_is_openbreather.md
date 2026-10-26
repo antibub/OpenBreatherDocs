@@ -13,11 +13,20 @@ OpenBreather is an [open-source](https://en.wikipedia.org/wiki/Open-source_hardw
 ## Who is this for? 
 Any rebreather enthusiast interested in the extremely rewarding hobby of constructing homebuilt rebreathers!
 
+
+
+
+## OpenBreather is ^^NOT^^ a substitute for commercially available rebreathers or rebreather training/certification! {: .center-text}
+
+
+
+
+<!-- 
 ## What is the OpenBreather Project ^^NOT^^? 
 The OpenBreather project is ^^NOT^^:  
 
 * A substitute for rebreather training/certification.  
-* A substitute for commercially available rebreathers.
+* A substitute for commercially available rebreathers. -->
 
 <!-- ## What inspired OpenBreather?
 The inspiriation for Openbreather came from the experinces of browsing RebreatherWorld forum (RIP) homebuilder forms   -->

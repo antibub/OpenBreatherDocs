@@ -30,6 +30,8 @@ markdown_extensions:
       toc_depth: 0
   - pymdownx.arithmatex:
       generic: true
+  - tables
+  - md_in_html
 
 
 plugins:
@@ -47,18 +49,17 @@ extra_css:
 nav:  
   - Warning!: index.md
   - What is OpenBreather?: what_is_openbreather.md
-  - Glossary: glossary.md
   - Guppy Pendulum mCCR: 
     - Design brief: guppy_ccr/design_brief.md
     - Analysis: 
       - Scrubber bedlife: guppy_ccr/analysis/scrubber_bedlife.md
       - Work of breathing: guppy_ccr/analysis/work_of_breathing.md
     - Building:
+      - Acquiring parts and components: guppy_ccr/building/acquiring_parts_and_components.md
       - Preparation: guppy_ccr/building/preparation.md
       - Assembly: guppy_ccr/building/assembly.md
     - Performance: guppy_ccr/performance.md
-  - Appendix: appendix.md
-
+    - Appendix: guppy_ccr/appendix.md
 
 
 extra_javascript:

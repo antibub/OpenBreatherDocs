@@ -64,11 +64,11 @@ To make the foam scrubber canister inserts, use the foam insert jig to trace and
 
 Six sections of three different webbing types are required to build the unit: 
 
-* Two sections of 2 inch width webbing, 12 inches in length.
-* One section of 2 inch width webbing, 28 inches in length.
-* One section of 1.5 inch width webbing, 12 inches in length.
-* One section of 1.5 inch width webbing, 42 inches in length.
-* One section of 1 inch width webbing, 26 inches in length.
+* Two sections of 2 inch width webbing, 12 inches in length, these are the top chest straps.
+* One section of 2 inch width webbing, 28 inches in length, this is the bottom chest strap.
+* One section of 1.5 inch width webbing, 12 inches in length, this is the short side neck strap.
+* One section of 1.5 inch width webbing, 42 inches in length, this is the long side neck strap.
+* One section of 1 inch width webbing, 26 inches in length, this is the counterlung strap.
 
 ![Figure 10](../../assets/part_preparation/short_2_in_webbing_section_(x2).jpg){ align=center }
 
