@@ -108,7 +108,7 @@ $$ \small
     \end{array}
 \end{array} $$
 
-Full table can be found [here](../../appendix.md).
+Full table can be found [here](../appendix.md).
 {: .center-text}
 
 
@@ -182,7 +182,7 @@ $$ \small
     \end{array}
 \end{array} $$
 
-Full table can be found [here](../../appendix.md).
+Full table can be found [here](../appendix.md).
 {: .center-text}
 
 Change in pressure summation:

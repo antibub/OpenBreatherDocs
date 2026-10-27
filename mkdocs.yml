@@ -54,6 +54,7 @@ nav:
     - Analysis: 
       - Scrubber bedlife: guppy_ccr/analysis/scrubber_bedlife.md
       - Work of breathing: guppy_ccr/analysis/work_of_breathing.md
+      - O-ring selection: guppy_ccr/analysis/o-ring_selection.md
     - Building:
       - Acquiring parts and components: guppy_ccr/building/acquiring_parts_and_components.md
       - Preparation: guppy_ccr/building/preparation.md
